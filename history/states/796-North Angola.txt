@@ -2,22 +2,21 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = GAF
+		owner = TMS
+		victory_points = {
+			12583 1
+		}
 		buildings = {
 			infrastructure = 1
-			2115 = {
-				naval_base = 1
-			}
+
 		}
-		victory_points = {
-			2115 1 
-		}
-		add_core_of = GAF
+
+
 	}
 	provinces={
-		2115 
+		1483 10408 2058 10660 10530 4467 12581 12640
 	}
-	manpower=25000
+	manpower=75900
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=wasteland
 }

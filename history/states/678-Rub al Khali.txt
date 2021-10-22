@@ -6,14 +6,21 @@ state={
 	state_category = wasteland
 
 	history={
+		victory_points = {
+			7960 1 
+		}
+
 		owner = SAU
 		buildings = {
 			infrastructure = 0
+			7960 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = SAU
 	}
 
 	provinces={
-		4932 5081 8030 8118 10870 12740 12768 
+		4932 5081 8030 8118 10870 12740 12768 2048 7960 8108 
 	}
 }

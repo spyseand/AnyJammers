@@ -3,8 +3,10 @@ state={
 	name="STATE_589"
 
 	history={
-		owner = KAZ
-		add_core_of = KAZ
+		victory_points = {
+			1591 3 
+		}
+		owner = CHI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -16,7 +18,7 @@ state={
 	}
 
 	provinces={
-		1239 1668 4651 4764 7332 7405 7711 7784 7795 7856 10290 10550 10619 10680 12529 12662 13148 13149 13197 
+		4651 7711 7795 7856 10550 10619 10680 12529 12662 13148 13149 13197 1591 1840 4773 4845 7706 10146 10547 10603 12658 12385
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000
