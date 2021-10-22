@@ -1,0 +1,128 @@
+
+focus_tree = {
+	id = german_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = GER
+		}
+	}
+
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = GER_the_big_four
+		icon = GFX_goal_unknown
+		x = 8
+		y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_a_withering_superpower
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_the_big_four }
+		relative_position_id = GER_the_big_four
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_testing_the_wunderwaffe
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_a_withering_superpower }
+		relative_position_id = GER_a_withering_superpower
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_the_italian_disaster
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_a_withering_superpower }
+		relative_position_id = GER_a_withering_superpower
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_sales_report
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_the_italian_disaster }
+		prerequisite = { focus = GER_testing_the_wunderwaffe }
+		relative_position_id = GER_testing_the_wunderwaffe
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_testing_the_waters
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_sales_report }
+		relative_position_id = GER_sales_report
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GER_formally_disband_the_NSDAP
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GER_testing_the_waters }
+		relative_position_id = GER_testing_the_waters
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+}

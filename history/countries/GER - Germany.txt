@@ -8,6 +8,7 @@ puppet = SLO
 puppet = BEL
 puppet = CZE
 puppet = LIT
+puppet = GAF
 
 # Starting tech
 set_technology = {
@@ -315,6 +316,7 @@ add_to_faction = PRT
 add_to_faction = LIT
 add_to_faction = LIV
 add_to_faction = FRA
+add_to_faction = GAF
 
 add_ideas = {
 	sour_loser
