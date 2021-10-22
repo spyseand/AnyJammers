@@ -14,6 +14,10 @@ add_to_faction = ENG
 add_to_faction = QUE
 add_to_faction = SAF
 add_to_faction = MEX
+add_to_faction = HOL
+add_to_faction = PHI
+add_to_faction = AUS
+add_to_faction = NZL
 
 set_research_slots = 4
 set_stability = 0.75
@@ -102,29 +106,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-#Monroe Doctrine
-give_guarantee = CAN
-give_guarantee = MEX
-give_guarantee = CUB
-give_guarantee = HAI
-give_guarantee = DOM
-give_guarantee = GUA
-give_guarantee = HON
-give_guarantee = ELS
-give_guarantee = NIC
-give_guarantee = COS
-give_guarantee = PAN
-give_guarantee = VEN
-give_guarantee = COL
-give_guarantee = ECU
-give_guarantee = PRU
-give_guarantee = BRA
-give_guarantee = BOL
-give_guarantee = CHL
-give_guarantee = PAR
-give_guarantee = ARG
-give_guarantee = URG
-
 set_convoys = 500
 
 
@@ -145,22 +126,6 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
-}
-
-
-# DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
 }
 
 create_country_leader = {
