@@ -1,0 +1,92 @@
+bookmarks = {
+	bookmark = {
+		name = "PEFECT_DYSTOPIA_NAME"
+		desc = "PEFECT_DYSTOPIA_DESC"
+		date = 1962.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+
+		"USA"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"ENG"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"SOV"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"GER"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"NSE"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"KUR"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"PRT"={
+			history = "USA_PERFECT_DYSTOPIA_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
