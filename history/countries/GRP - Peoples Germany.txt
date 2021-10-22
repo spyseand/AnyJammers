@@ -1,14 +1,6 @@
-﻿capital = 64
-
-oob = "GER_1962"
+﻿capital = 51
 
 set_fuel_ratio = 0.8
-
-puppet = SLO
-puppet = BEL
-puppet = CZE
-puppet = LIT
-puppet = GAF
 
 # Starting tech
 set_technology = {
@@ -24,7 +16,6 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	improved_light_tank = 1
-	basic_medium_tank = 1
 	basic_heavy_tank = 1
 	early_fighter = 1
 	fighter1 = 1
@@ -109,27 +100,16 @@ set_stability = 0.75
 set_war_support = 0.3
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = communism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 60
-	communism = 20
+	democratic = 40
+	fascism = 15
+	communism = 45
 }
-
-create_faction = Einheitspakt
-add_to_faction = GER
-add_to_faction = BEL
-add_to_faction = CZE
-add_to_faction = SLO
-add_to_faction = PRT
-add_to_faction = LIT
-add_to_faction = LIV
-add_to_faction = FRA
-add_to_faction = GAF
 
 create_country_leader = {
 	name = "Adolf Hitler"

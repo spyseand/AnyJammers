@@ -1,0 +1,522 @@
+
+add_namespace = germany
+
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		188 = {
+			set_demilitarized_zone = yes
+		}
+		763 = {
+			set_demilitarized_zone = yes
+		}
+		5 = {
+			set_demilitarized_zone = yes
+		}
+		85 = {
+			set_demilitarized_zone = yes
+		}
+		86 = {
+			set_demilitarized_zone = yes
+		}
+		67 = {
+			set_demilitarized_zone = yes
+		}
+		762 = {
+			set_demilitarized_zone = yes
+		}
+		66 = {
+			set_demilitarized_zone = yes
+		}
+		68 = {
+			set_demilitarized_zone = yes
+		}
+		63 = {
+			set_demilitarized_zone = yes
+		}
+		65 = {
+			set_demilitarized_zone = yes
+		}
+		62 = {
+			set_demilitarized_zone = yes
+		}
+		61 = {
+			set_demilitarized_zone = yes
+		}
+		58 = {
+			set_demilitarized_zone = yes
+		}
+		59 = {
+			set_demilitarized_zone = yes
+		}
+		74 = {
+			set_demilitarized_zone = yes
+		}
+		72 = {
+			set_demilitarized_zone = yes
+		}
+		GER = {
+			country_event = {
+				id = germany.2
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = germany.1.a
+	}
+}
+
+country_event = {
+	id = germany.2
+	title = germany.2.t
+	desc = germany.2.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		56 = {
+			set_demilitarized_zone = yes
+		}
+		57 = {
+			set_demilitarized_zone = yes
+		}
+		55 = {
+			set_demilitarized_zone = yes
+		}
+		60 = {
+			set_demilitarized_zone = yes
+		}
+		54 = {
+			set_demilitarized_zone = yes
+		}
+		50 = {
+			set_demilitarized_zone = yes
+		}
+		52 = {
+			set_demilitarized_zone = yes
+		}
+		53 = {
+			set_demilitarized_zone = yes
+		}
+		153 = {
+			set_demilitarized_zone = yes
+		}
+		151 = {
+			set_demilitarized_zone = yes
+		}
+		152 = {
+			set_demilitarized_zone = yes
+		}
+		GER = {
+			country_event = {
+				id = germany.3
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = germany.2.a
+	}
+}
+
+country_event = {
+	id = germany.3
+	title = germany.3.t
+	desc = germany.3.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		51 = {
+			set_demilitarized_zone = yes
+		}
+		42 = {
+			set_demilitarized_zone = yes
+		}
+		8 = {
+			set_demilitarized_zone = yes
+		}
+		28 = {
+			set_demilitarized_zone = yes
+		}
+		102 = {
+			set_demilitarized_zone = yes
+		}
+		4 = {
+			set_demilitarized_zone = yes
+		}
+		GER = {
+			country_event = {
+				id = germany.4
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = germany.3.a
+	}
+}
+
+country_event = {
+	id = germany.4
+	title = germany.4.t
+	desc = germany.4.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		64 = {
+			set_demilitarized_zone = yes
+		}
+		69 = {
+			set_demilitarized_zone = yes
+		}
+		3 = {
+			set_demilitarized_zone = yes
+		}
+		158 = {
+			set_demilitarized_zone = yes
+		}
+		159 = {
+			set_demilitarized_zone = yes
+		}
+		161 = {
+			set_demilitarized_zone = yes
+		}
+		39 = {
+			set_demilitarized_zone = yes
+		}
+		160 = {
+			set_demilitarized_zone = yes
+		}
+		599 = {
+			set_demilitarized_zone = yes
+		}
+		35 = {
+			set_demilitarized_zone = yes
+		}
+		7 = {
+			set_demilitarized_zone = yes
+		}
+		36 = {
+			set_demilitarized_zone = yes
+		}
+		736 = {
+			set_demilitarized_zone = yes
+		}
+		GER = {
+			country_event = {
+				id = germany.5
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = germany.4.a
+	}
+}
+
+country_event = {
+	id = germany.5
+	title = germany.5.t
+	desc = germany.5.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		country_event = {
+			id = germany.6
+			days = 10
+		}
+	}
+
+	option = {
+		name = germany.5.a
+		set_country_flag = GER_picked_corps
+	}
+
+	option = {
+		name = germany.5.b
+		set_country_flag = GER_picked_nsdap
+	}
+
+	option = {
+		name = germany.5.c
+		set_country_flag = GER_picked_people
+	}
+}
+
+
+##GERMAN CIVIL WAR!!!!! 
+
+country_event = {
+	id = germany.6
+	title = germany.6.t
+	desc = germany.6.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		GER = {
+			delete_unit_template_and_units = {
+				division_template = "Infanterie-Division"
+				disband = yes
+			}
+			delete_unit_template_and_units = {
+				division_template = "Infanterie-Division (mot.)"
+				disband = yes
+			}
+			set_cosmetic_tag = GER_wermacht_gov
+			dismantle_faction = yes
+			if = {
+				limit = {
+					has_country_flag = GER_picked_corps
+				}
+				GRC = {
+					change_tag_from = GER
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = GER_picked_nsdap
+				}
+				GRN = {
+					change_tag_from = GER
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = GER_picked_people
+				}
+				GRP = {
+					change_tag_from = GER
+				}
+			}
+		}
+		BEL = {
+			end_puppet = GER
+		}
+		CZE = {
+			end_puppet = GER
+		}
+		SLO = {
+			end_puppet = GER
+		}
+		LIT = {
+			end_puppet = GER
+		}
+		GAF = {
+			end_puppet = GER
+		}
+		every_owned_state = {
+			limit = {
+				is_demilitarized_zone = yes
+			}
+			set_demilitarized_zone = no
+		}
+		GRN = {
+			transfer_state = 188
+			add_state_core = 188
+			transfer_state = 763
+			add_state_core = 763
+			transfer_state = 5
+			add_state_core = 5
+			transfer_state = 85
+			add_state_core = 85	
+			transfer_state = 86
+			add_state_core = 86
+			transfer_state = 67
+			add_state_core = 67
+			transfer_state = 762
+			add_state_core = 762
+			transfer_state = 66
+			add_state_core = 66
+			transfer_state = 68
+			add_state_core = 68
+			transfer_state = 63
+			add_state_core = 63
+			transfer_state = 65
+			add_state_core = 65
+			transfer_state = 62
+			add_state_core = 62
+			transfer_state = 61
+			add_state_core = 61
+			transfer_state = 58
+			add_state_core = 58
+			transfer_state = 59
+			add_state_core = 59
+			transfer_state = 74
+			add_state_core = 74
+			transfer_state = 72
+			add_state_core = 72
+			declare_war_on = {
+				target = GRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRP
+				type = annex_everything
+			}
+		}
+		GRC = {
+			transfer_state = 56
+			add_state_core = 56
+			transfer_state = 57
+			add_state_core = 57
+			transfer_state = 55
+			add_state_core = 55
+			transfer_state = 60
+			add_state_core = 60
+			transfer_state = 54
+			add_state_core = 54
+			transfer_state = 50
+			add_state_core = 50
+			transfer_state = 52
+			add_state_core = 52
+			transfer_state = 53
+			add_state_core = 53
+			transfer_state = 153
+			add_state_core = 153
+			transfer_state = 151
+			add_state_core = 151
+			transfer_state = 152
+			add_state_core = 152
+			declare_war_on = {
+				target = GRP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRN
+				type = annex_everything
+			}
+		}
+		GRP = {
+			transfer_state = 4
+			add_state_core = 4
+			transfer_state = 102
+			add_state_core = 102
+			transfer_state = 51
+			add_state_core = 51
+			transfer_state = 42
+			add_state_core = 42
+			transfer_state = 8
+			add_state_core = 8
+			transfer_state = 28
+			add_state_core = 28
+			declare_war_on = {
+				target = GRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRN
+				type = annex_everything
+			}
+		}
+		country_event = {
+			id = germany.7
+			days = 15
+		}
+	}
+
+	option = {
+		name = germany.6.a
+	}
+}
+
+country_event = {
+	id = germany.7
+	title = germany.7.t
+	desc = germany.7.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		BEN = {
+			transfer_state = 35
+			add_state_core = 35
+			transfer_state = 36
+			add_state_core = 36
+			transfer_state = 7
+			add_state_core = 7
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+		}
+		SWI = {
+			transfer_state = 3
+			add_state_core = 3
+			declare_war_on = {
+				target = GRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GRP
+				type = annex_everything
+			}
+		}
+		CZS = {
+			transfer_state = 69
+			add_state_core = 69
+			transfer_state = 9
+			add_state_core = 9
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SLO
+				type = annex_everything
+			}
+		}
+		PAD = {
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 161
+			add_state_core = 161
+			declare_war_on = {
+				target = GRI
+				type = annex_everything
+			}
+		}
+		GRI = {
+			transfer_state = 39
+			add_state_core = 39
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 736
+			add_state_core = 736
+			declare_war_on = {
+				target = PAD
+				type = annex_everything
+			}
+		}
+	}
+
+	option = {
+		name = germany.7.a
+	}
+}
