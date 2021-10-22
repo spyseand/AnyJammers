@@ -142,7 +142,7 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = rgb { 210 210 45 } 
+	color = rgb { 200 100 0 } 
 	color_ui = rgb { 210 210 45 }
 }
 CHL = {
@@ -258,7 +258,7 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
-	color = rgb { 184 184 46 }
+	color = rgb { 200 120 40 }
 	color_ui = rgb { 184 184 46 }
 }
 MEN = {
@@ -398,7 +398,7 @@ INS = {
 }
 
 VIN = {
-	color = rgb { 230  223  50 }
+	color = rgb { 200 120 40 }
 	color_ui = rgb { 230  223  50 }
 }
 
