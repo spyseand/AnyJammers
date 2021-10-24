@@ -29,14 +29,14 @@ set_technology = {
 set_convoys = 200
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 8
+	democratic = 62
 	fascism = 0
-	communism = 90
+	communism = 36
 	neutrality = 2
 }

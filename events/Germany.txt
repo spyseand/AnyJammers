@@ -365,6 +365,8 @@ country_event = {
 			add_state_core = 74
 			transfer_state = 72
 			add_state_core = 72
+			inherit_technology = GER
+			load_oob = "GCW_nsdap"
 			declare_war_on = {
 				target = GRC
 				type = annex_everything
@@ -397,6 +399,8 @@ country_event = {
 			add_state_core = 151
 			transfer_state = 152
 			add_state_core = 152
+			inherit_technology = GER
+			load_oob = "GCW_corps"
 			declare_war_on = {
 				target = GRP
 				type = annex_everything
@@ -419,6 +423,8 @@ country_event = {
 			add_state_core = 8
 			transfer_state = 28
 			add_state_core = 28
+			inherit_technology = GER
+			load_oob = "GCW_people"
 			declare_war_on = {
 				target = GRC
 				type = annex_everything
@@ -431,6 +437,10 @@ country_event = {
 		country_event = {
 			id = germany.7
 			days = 15
+		}
+		news_event = {
+			id = germany.17
+			days = 1
 		}
 	}
 
@@ -455,6 +465,11 @@ country_event = {
 			add_state_core = 36
 			transfer_state = 7
 			add_state_core = 7
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 29
+			inherit_technology = GER
+			load_oob = "GCW_benelux"
 			declare_war_on = {
 				target = BEL
 				type = annex_everything
@@ -463,6 +478,9 @@ country_event = {
 		SWI = {
 			transfer_state = 3
 			add_state_core = 3
+			add_state_core = 151
+			inherit_technology = GER
+			load_oob = "GCW_swiss"
 			declare_war_on = {
 				target = GRC
 				type = annex_everything
@@ -481,6 +499,11 @@ country_event = {
 			add_state_core = 69
 			transfer_state = 9
 			add_state_core = 9
+			add_state_core = 75
+			add_state_core = 70
+			add_state_core = 71
+			inherit_technology = GER
+			load_oob = "GCW_czechslovak"
 			declare_war_on = {
 				target = CZE
 				type = annex_everything
@@ -497,6 +520,11 @@ country_event = {
 			add_state_core = 159
 			transfer_state = 161
 			add_state_core = 161
+			add_state_core = 39
+			add_state_core = 160
+			add_state_core = 736
+			inherit_technology = GER
+			load_oob = "GCW_padania"
 			declare_war_on = {
 				target = GRI
 				type = annex_everything
@@ -509,6 +537,8 @@ country_event = {
 			add_state_core = 160
 			transfer_state = 736
 			add_state_core = 736
+			inherit_technology = GER
+			load_oob = "GCW_venetia"
 			declare_war_on = {
 				target = PAD
 				type = annex_everything
@@ -520,3 +550,231 @@ country_event = {
 		name = germany.7.a
 	}
 }
+
+#big four
+country_event = {
+	id = germany.8
+	title = germany.8.t
+	desc = germany.8.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.8.a
+	}
+}
+
+#withering superpower
+country_event = {
+	id = germany.9
+	title = germany.9.t
+	desc = germany.9.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.9.a
+	}
+}
+
+#italian disaster
+country_event = {
+	id = germany.10
+	title = germany.10.t
+	desc = germany.10.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.10.a
+	}
+}
+
+#testing nuclear bomb
+country_event = {
+	id = germany.11
+	title = germany.11.t
+	desc = germany.11.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.11.a
+		news_event = {
+			id = germany.12
+			days = 3
+		}
+	}
+}
+
+#global news, germany has thermonukes
+news_event = {
+	id = germany.12
+	title = germany.12.t
+	desc = germany.12.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = germany.12.a
+	}
+}
+
+#Sales report, stonks
+country_event = {
+	id = germany.13
+	title = germany.13.t
+	desc = germany.13.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.13.a
+	}
+}
+
+#testing the water
+country_event = {
+	id = germany.14
+	title = germany.14.t
+	desc = germany.14.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.14.a
+	}
+}
+
+#formally disband NSDAP (get fucked loesrs)
+country_event = {
+	id = germany.15
+	title = germany.15.t
+	desc = germany.15.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = germany.15.a
+		news_event = {
+			id = germany.16
+			days = 3
+		}
+	}
+}
+
+#global news, germany just disbanded the nazi party???? wtf???
+news_event = {
+	id = germany.16
+	title = germany.16.t
+	desc = germany.16.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = germany.16.a
+	}
+}
+
+#the german civil war!!!
+news_event = {
+	id = germany.17
+	title = germany.17.t
+	desc = germany.17.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	option = {
+		name = germany.17.a
+	}
+}
+
+country_event = {
+	id = germany.18
+	title = germany.18.t
+	desc = germany.18.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			NOT = {
+				AND = {
+					country_exists = GRP
+					country_exists = GRN
+					country_exists = SWI
+				}
+			}
+			NOT = {
+				AND = {
+					country_exists = GRC
+					country_exists = GRP
+					country_exists = SWI
+				}
+			}
+			NOT = {
+				AND = {
+					country_exists = GRC
+					country_exists = GRN
+					country_exists = SWI
+				}
+			}
+		}
+	}
+
+	option = {
+		name = germany.18.a
+		trigger = {
+			country_exists = GRC
+		}
+		add_global_flag = GER_corps_won_FLG
+		change_tag_from = GRC
+		set_cosmetic_tag = GER_corporate_state
+		annex_country = {
+			target = GRC
+			transfer_troops = yes
+		}
+	}
+	option = {
+		name = germany.18.b
+		trigger = {
+			country_exists = GRN
+		}
+		add_global_flag = GER_NSDAP_won_FLG
+		change_tag_from = GRN
+		set_cosmetic_tag = GER_nsdap_state
+		annex_country = {
+			target = GRN
+			transfer_troops = yes
+		}
+	}
+	option = {
+		name = germany.18.c
+		trigger = {
+			country_exists = GRP
+		}
+		add_global_flag = GER_people_won_FLG
+		declare_war_on = {
+			target = GRP
+			type = annex_everything
+		}
+	}
+}
+
+###POST CW
+
+###Corporate State

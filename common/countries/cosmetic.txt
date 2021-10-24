@@ -2,3 +2,15 @@ GER_wermacht_gov = {
     color = rgb { 50 50 50 }
     color_ui = rgb { 50 50 50 }
 }
+GER_corporate_state = {
+    color = rgb { 50 50 50 }
+    color_ui = rgb { 50 50 50 }
+}
+GER_nsdap_state = {
+    color = rgb { 50 50 50 }
+    color_ui = rgb { 50 50 50 }
+}
+GER_peoples_state = {
+    color = rgb { 74 74 74 }
+    color_ui = rgb { 74 74 74 }
+}

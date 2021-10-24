@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Infanterie-Division"
+	name = "Volksmiliz"
 
 	division_names_group = GER_Inf_01
 
@@ -10,27 +10,22 @@
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	
 	support = {
         engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-        recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
-	name = "Panzerwaffe"
+	name = "Volkspanzer"
 
 	division_names_group = GER_Arm_01
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }
 		medium_armor = { x = 0 y = 1 }
-        medium_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
 		motorized = { x = 2 y = 0 }
         motorized = { x = 2 y = 1 }
 	}
@@ -38,12 +33,10 @@ division_template = {
         mot_recon = { x = 0 y = 0 }
         engineer = { x = 0 y = 1 }
         artillery = { x = 0 y = 2 }
-        signal_company = { x = 0 y = 3 }
-        logistics_company = { x = 0 y = 4 }
 	}
 }
 division_template = {
-	name = "Infanterie-Division (mot.)"
+	name = "Volksmiliz (mot.)"
 
 	division_names_group = GER_MOT_02
 
@@ -51,190 +44,215 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 	    motorized = { x = 0 y = 1 }
 		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
 		
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
-		
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
 	}
 	support = {
         mot_recon = { x = 0 y = 0 }
 	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Feldgendarmerie"
-
-	division_names_group = GER_GAR_01
-
-	regiments = {
-		armored_car = { x = 0 y = 0 }
-        armored_car = { x = 0 y = 1 }
-        cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
-	}
-	support = {
-	    military_police = { x = 0 y = 0 }
 	}
 }
 
 units = {
 	division= {	
-		location = 6334
-		division_template = "Infanterie-Division"
+		location = 6469
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 6469
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 6469
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 6469
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 6469
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		division_template = "Volksmiliz"
+		location = 11531
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11531
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 9503
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 9503
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 9503
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 9503
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 9503
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Panzerwaffe"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Panzerwaffe"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Panzerwaffe"
+		location = 11666
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 537
-		division_template = "Infanterie-Division (mot.)"
+		location = 9627
+		division_template = "Volksmiliz"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 587
+		division_template = "Volkspanzer"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 587
+		division_template = "Volkspanzer"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 587
+		division_template = "Volkspanzer"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 587
+		division_template = "Volkspanzer"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 6583
+		division_template = "Volksmiliz (mot.)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 6583
+		division_template = "Volksmiliz (mot.)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 6583
+		division_template = "Volksmiliz (mot.)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 6583
+		division_template = "Volksmiliz (mot.)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 6583
+		division_template = "Volksmiliz (mot.)"
 		start_experience_factor = 0.3
 	}
 }

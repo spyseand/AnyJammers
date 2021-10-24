@@ -85,82 +85,42 @@ division_template = {
 
 units = {
 	division= {	
-		location = 6377
+		location = 11584
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6377
+		location = 11584
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6377
+		location = 11584
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6377
+		location = 11598
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_template = "Infanterie-Division"
-		location = 6377
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 11467
+		location = 6626
 		division_template = "Panzerwaffe"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 9570
+		location = 11584
 		division_template = "Panzerwaffe"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6558
-		division_template = "Panzerwaffe"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 9347
+		location = 11584
 		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 9347
+		location = 6626
 		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}

@@ -1,0 +1,48 @@
+
+add_namespace = pgermany
+
+country_event = {
+	id = pgermany.1
+	title = pgermany.1.t
+	desc = pgermany.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			country_exists = GER
+		}
+	}
+
+	option = {
+		name = pgermany.1.a
+		set_cosmetic_tag = GER_peoples_state
+		hidden_effect = {
+			add_state_core = 56
+			add_state_core = 59
+			add_state_core = 58
+			add_state_core = 57
+			add_state_core = 55
+			add_state_core = 60
+			add_state_core = 54
+			add_state_core = 50
+			add_state_core = 3
+			add_state_core = 151
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 153
+			add_state_core = 152
+			add_state_core = 4
+			add_state_core = 102
+			add_state_core = 736
+			add_state_core = 160
+			add_state_core = 39
+			add_state_core = 159
+			add_state_core = 35
+			add_state_core = 7
+			add_state_core = 36
+			add_state_core = 69
+		}
+	}
+}

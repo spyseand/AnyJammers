@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_the_big_four
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		x = 8
 		y = 0
 		cost = 5
@@ -24,13 +24,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.8
+				days = 0
+			}
 		}
 	}
 
 	focus = {
 		id = GER_a_withering_superpower
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_reichskommisariats
 		x = 0
 		y = 1
 		cost = 5
@@ -40,13 +43,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.9
+				days = 0
+			}
 		}
 	}
 
 	focus = {
-		id = GER_testing_the_wunderwaffe
-		icon = GFX_goal_unknown
+		id = GER_testing_the_wasserstoffbombe
+		icon = GFX_focus_wonderweapons
 		x = -1
 		y = 1
 		cost = 5
@@ -56,13 +62,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.11
+				days = 0
+			}
 		}
 	}
 
 	focus = {
 		id = GER_the_italian_disaster
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_assassinate_mussolini
 		x = 1
 		y = 1
 		cost = 5
@@ -72,30 +81,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.10
+				days = 0
+			}
 		}
 	}
 
 	focus = {
 		id = GER_sales_report
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		x = 1
 		y = 1
 		cost = 5
 		prerequisite = { focus = GER_the_italian_disaster }
-		prerequisite = { focus = GER_testing_the_wunderwaffe }
-		relative_position_id = GER_testing_the_wunderwaffe
+		prerequisite = { focus = GER_testing_the_wasserstoffbombe }
+		relative_position_id = GER_testing_the_wasserstoffbombe
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.13
+				days = 0
+			}
 		}
 	}
 
 	focus = {
 		id = GER_testing_the_waters
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CZE_german_puppet
 		x = 0
 		y = 1
 		cost = 5
@@ -105,13 +120,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.14
+				days = 0
+			}
 		}
 	}
 
 	focus = {
 		id = GER_formally_disband_the_NSDAP
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ger_oppose_hitler
 		x = 0
 		y = 1
 		cost = 5
@@ -121,7 +139,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = germany.15
+				days = 0
+			}
 		}
 	}
 	

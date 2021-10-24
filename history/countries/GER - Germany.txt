@@ -4,11 +4,26 @@ oob = "GER_1962"
 
 set_fuel_ratio = 0.8
 
-puppet = SLO
-puppet = BEL
-puppet = CZE
-puppet = LIT
-puppet = GAF
+set_autonomy = {
+	target = SLO
+	autonomy_state = reichsprotectorate
+}
+set_autonomy = {
+	target = CZE
+	autonomy_state = reichsprotectorate
+}
+set_autonomy = {
+	target = BEL
+	autonomy_state = reichsprotectorate
+}
+set_autonomy = {
+	target = LIT
+	autonomy_state = satellite
+}
+set_autonomy = {
+	target = GAF
+	autonomy_state = satellite
+}
 
 # Starting tech
 set_technology = {

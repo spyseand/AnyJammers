@@ -11,11 +11,14 @@
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
         infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 	
 	support = {
         engineer = { x = 0 y = 0 }
         artillery = { x = 0 y = 1 }
+        recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -85,83 +88,33 @@ division_template = {
 
 units = {
 	division= {	
-		location = 6377
+		location = 11539
+		division_template = "Feldgendarmerie"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 11539
+		division_template = "Feldgendarmerie"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 11539
+		division_template = "Feldgendarmerie"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 3581
+		division_template = "Feldgendarmerie"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		location = 9692
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		division_template = "Infanterie-Division"
-		location = 6377
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6377
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 514
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 11467
+		location = 9692
 		division_template = "Panzerwaffe"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 9570
-		division_template = "Panzerwaffe"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 6558
-		division_template = "Panzerwaffe"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 9347
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
-	}
-	division= {	
-		location = 9347
-		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3
 	}
 }
