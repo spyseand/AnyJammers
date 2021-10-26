@@ -1,0 +1,906 @@
+
+focus_tree = {
+	id = corpgerman_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = GER
+			has_global_flag = GER_corps_won_FLG
+		}
+	}
+
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 2000 y = 200 }
+
+	focus = {
+		id = GRC_victory_in_the_war
+		icon = GFX_focus_generic_support_the_left_right
+		x = 12
+		y = 0
+		cost = 0
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_a_fabulous_display
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_victory_in_the_war }
+		relative_position_id = GRC_victory_in_the_war
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.19
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_the_centerpiece
+		icon = GFX_focus_ger_reichskommisariats
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_victory_in_the_war }
+		relative_position_id = GRC_victory_in_the_war
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.20
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_finish_the_purge
+		icon = GFX_goal_generic_secret_weapon
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_the_centerpiece }
+		prerequisite = { focus = GRC_a_fabulous_display }
+		relative_position_id = GRC_the_centerpiece
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = GER_faction_remnants
+		}
+	}
+
+	focus = {
+		id = GRC_cleaning_the_mess
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = -4
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_finish_the_purge }
+		relative_position_id = GRC_finish_the_purge
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.21
+				days = 1
+			}
+		}
+	}
+
+### Cleaning the Mess Up
+
+	focus = {
+		id = GRC_bureau_of_internal_affairs
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_cleaning_the_mess }
+		relative_position_id = GRC_cleaning_the_mess
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_the_report_and_reward_system
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_bureau_of_internal_affairs }
+		relative_position_id = GRC_bureau_of_internal_affairs
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_privatize_the_secret_police
+		icon = GFX_focus_mex_privatisation
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_bureau_of_internal_affairs }
+		relative_position_id = GRC_bureau_of_internal_affairs
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_a_modern_surveillance_state
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_the_report_and_reward_system }
+		prerequisite = { focus = GRC_privatize_the_secret_police }
+		relative_position_id = GRC_privatize_the_secret_police
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_motivating_the_workers
+		icon = GFX_focus_generic_tank_production
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_cleaning_the_mess }
+		relative_position_id = GRC_cleaning_the_mess
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.23
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_weekly_elimination_quotas
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_motivating_the_workers }
+		relative_position_id = GRC_motivating_the_workers
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_nomimal_promotions
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_weekly_elimination_quotas }
+		relative_position_id = GRC_weekly_elimination_quotas
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_addictive_additives
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_motivating_the_workers }
+		relative_position_id = GRC_motivating_the_workers
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_systemic_addiction
+		icon = GFX_focus_research2
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_addictive_additives }
+		relative_position_id = GRC_addictive_additives
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_happy_workplace_higher_production
+		icon = GFX_focus_CZE_german_puppet
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_nomimal_promotions }
+		prerequisite = { focus = GRC_systemic_addiction }
+		prerequisite = { focus = GRC_a_modern_surveillance_state }
+		relative_position_id = GRC_nomimal_promotions
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_a_depression_staved_off
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_happy_workplace_higher_production }
+		prerequisite = { focus = GRC_finishing_what_hitler_started }
+		relative_position_id = GRC_happy_workplace_higher_production
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = GER_monopoly_tree_FLG
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+###
+
+	focus = {
+		id = GRC_necessary_diplomacy
+		icon = GFX_focus_generic_treaty
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_finish_the_purge }
+		relative_position_id = GRC_finish_the_purge
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.22
+				days = 1
+			}
+		}
+	}
+
+	#### Necessary Diplomacy
+
+	focus = {
+		id = GRC_the_loyal_mutts
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_necessary_diplomacy }
+		relative_position_id = GRC_necessary_diplomacy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_and_the_rest_of_them
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_necessary_diplomacy }
+		relative_position_id = GRC_necessary_diplomacy
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_integrate_the_reichskommisariats
+		icon = GFX_goal_generic_attack_allies
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_and_the_rest_of_them }
+		prerequisite = { focus = GRC_the_loyal_mutts }
+		relative_position_id = GRC_and_the_rest_of_them
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_baltic_diplomacy
+		icon = GFX_goal_generic_forceful_treaty
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_integrate_the_reichskommisariats }
+		relative_position_id = GRC_integrate_the_reichskommisariats
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = LIT
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIV
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_just_a_bit_more_lebensraum
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_integrate_the_reichskommisariats }
+		relative_position_id = GRC_integrate_the_reichskommisariats
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PRT
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_reinviting_the_french
+		icon = GFX_focus_generic_attack_vichy_france
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_integrate_the_reichskommisariats }
+		relative_position_id = GRC_integrate_the_reichskommisariats
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_finishing_what_hitler_started
+		icon = GFX_focus_attack_italy
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = GRC_just_a_bit_more_lebensraum }
+		prerequisite = { focus = GRC_reinviting_the_french }
+		prerequisite = { focus = GRC_baltic_diplomacy }
+		relative_position_id = GRC_just_a_bit_more_lebensraum
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UMB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = RME
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NAP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SAR
+			}
+		}
+	}
+
+	###########Monopoly
+
+	focus = {
+		id = GRC_a_friendly_game_of_monopoly
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 0
+		prerequisite = { focus = GRC_a_depression_staved_off }
+		relative_position_id = GRC_a_depression_staved_off
+
+		allow_branch = {
+			has_country_flag = GER_monopoly_tree_FLG
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.24
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_reichswerke
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_a_friendly_game_of_monopoly }
+		relative_position_id = GRC_a_friendly_game_of_monopoly
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.27
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_industrial_reorginization
+		icon = GFX_goal_generic_production
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_reichswerke }
+		relative_position_id = GRC_reichswerke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_a_deal_with_the_americans
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_reichswerke }
+		relative_position_id = GRC_reichswerke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_fund_industrial_terrorism
+		icon = GFX_goal_generic_military_deal
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_reichswerke }
+		relative_position_id = GRC_reichswerke
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_battleship_eliminated
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_a_deal_with_the_americans }
+		prerequisite = { focus = GRC_fund_industrial_terrorism }
+		prerequisite = { focus = GRC_industrial_reorginization }
+		relative_position_id = GRC_a_deal_with_the_americans
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.28
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_daimler_benz
+		icon = GFX_goal_generic_army_motorized
+		x = 6
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_a_friendly_game_of_monopoly }
+		relative_position_id = GRC_a_friendly_game_of_monopoly
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.29
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_ease_trade_bans
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_daimler_benz }
+		relative_position_id = GRC_daimler_benz
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_mass_advertisement_campaigns
+		icon = GFX_goal_generic_radar
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_daimler_benz }
+		relative_position_id = GRC_daimler_benz
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_car_eliminated
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_ease_trade_bans }
+		prerequisite = { focus = GRC_mass_advertisement_campaigns }
+		relative_position_id = GRC_ease_trade_bans
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.30
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_siemens
+		icon = GFX_goal_generic_production2
+		x = -6
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_a_friendly_game_of_monopoly }
+		relative_position_id = GRC_a_friendly_game_of_monopoly
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.25
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_a_deal_with_the_devil
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_siemens }
+		relative_position_id = GRC_siemens
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_nationalize_medical_institutions
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_siemens }
+		relative_position_id = GRC_siemens
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GRC_wheelbarrow_eliminated
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_nationalize_medical_institutions }
+		prerequisite = { focus = GRC_a_deal_with_the_devil }
+		relative_position_id = GRC_nationalize_medical_institutions
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.26
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_a_true_monopoly
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_battleship_eliminated }
+		prerequisite = { focus = GRC_wheelbarrow_eliminated }
+		prerequisite = { focus = GRC_car_eliminated }
+		relative_position_id = GRC_battleship_eliminated
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = GER_late_capitalism_FLG
+			mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = germany.31
+				days = 1
+			}
+		}
+	}
+
+
+
+	#######What late capitalism does to a mf
+
+	focus = {
+		id = GRC_the_most_powerful_man_in_the_world
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_a_true_monopoly }
+		relative_position_id = GRC_a_true_monopoly
+		
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = GER_late_capitalism_FLG
+		}
+
+		completion_reward = {
+			country_event = {
+				id = germany.42
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_the_final_frontier
+		icon = GFX_focus_rocketry
+		x = -3
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_most_powerful_man_in_the_world }
+		relative_position_id = GRC_the_most_powerful_man_in_the_world
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.32
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_generalplan_weltraum
+		icon = GFX_focus_ger_reichskommisariats
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_final_frontier }
+		relative_position_id = GRC_the_final_frontier
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.33
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_the_new_european_culture
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_most_powerful_man_in_the_world }
+		relative_position_id = GRC_the_most_powerful_man_in_the_world
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.35
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_catalogue_army
+		icon = GFX_goal_generic_trade
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_new_european_culture }
+		relative_position_id = GRC_the_new_european_culture
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.36
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_ruthless_efficiency
+		icon = GFX_focus_generic_industry_3
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_most_powerful_man_in_the_world }
+		relative_position_id = GRC_the_most_powerful_man_in_the_world
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.37
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_the_grim_reaper
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_ruthless_efficiency }
+		relative_position_id = GRC_ruthless_efficiency
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.38
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_the_perfect_dystopia
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_grim_reaper }
+		prerequisite = { focus = GRC_catalogue_army }
+		prerequisite = { focus = GRC_generalplan_weltraum }
+		relative_position_id = GRC_catalogue_army
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+				id = germany.39
+				days = 1
+			}
+		}
+	}
+	
+}

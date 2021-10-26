@@ -1,0 +1,130 @@
+
+focus_tree = {
+	id = germancw_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = GRC
+		}
+		modifier = {
+			add = 20
+			tag = GRP
+		}
+		modifier = {
+			add = 20
+			tag = GRN
+		}
+	}
+
+	reset_on_civilwar = no
+
+	continuous_focus_position = { x = 50 y = 2000 }
+
+	focus = {
+		id = GCW_rally_for_war
+		icon = GFX_goal_generic_small_arms
+		x = 8
+		y = 0
+		cost = 0
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GCW_industrial_mobilization
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = GCW_rally_for_war }
+		relative_position_id = GCW_rally_for_war
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+	focus = {
+		id = GCW_seize_weapon_depots
+		icon = GFX_focus_generic_combined_arms
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = GCW_industrial_mobilization }
+		relative_position_id = GCW_industrial_mobilization
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 6000
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = GER
+			}
+		}
+	}
+	focus = {
+		id = GCW_ideological_mobilization
+		icon = GFX_goal_generic_demand_territory
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = GCW_rally_for_war }
+		relative_position_id = GCW_rally_for_war
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.25
+		}
+	}
+	focus = {
+		id = GCW_planned_offensive
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = GCW_ideological_mobilization }
+		relative_position_id = GCW_ideological_mobilization
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_planned_offensive
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = GCW_all_or_nothing
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = GCW_planned_offensive }
+		prerequisite = { focus = GCW_seize_weapon_depots }
+		relative_position_id = GCW_planned_offensive
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GER_all_or_nothing
+		}
+	}
+}

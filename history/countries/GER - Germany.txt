@@ -25,6 +25,11 @@ set_autonomy = {
 	autonomy_state = satellite
 }
 
+add_ideas = {
+	GER_corporate_oligarchy
+	GER_mass_poverty
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -147,12 +152,11 @@ add_to_faction = FRA
 add_to_faction = GAF
 
 create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1965.1.1"
+	name = "Martin Bormann"
+	picture = "gfx/leaders/Portrait_Martin_Bormann.dds"
+	expire = "1999.1.1"
 	ideology = nazism
 	traits = {
-		dictator
+		corporate_puppet
 	}
 }

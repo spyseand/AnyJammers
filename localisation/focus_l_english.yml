@@ -2301,6 +2301,19 @@
  GER_formally_disband_the_NSDAP:0 "Disband the NSDAP"
  GER_formally_disband_the_NSDAP_desc:0 "The time has come. Every piece is in place on the board, and all that's left to do is for Josef Abs to sign the bill. If his gambit does not pay off, Germany will be plunged into a dark age like never before."
 
+ GCW_rally_for_war:0 "Rally for War"
+ GCW_rally_for_war_desc:0 "Germany has descended into civil war. It is time to seize this opportunity and take control of the nation for ourselves."
+ GCW_industrial_mobilization:0 "Industrial Mobilization"
+ GCW_industrial_mobilization_desc:0 "Military equipment is obviously incredibly important for funding a military campaign. Let us ensure we don't run out."
+ GCW_seize_weapon_depots:0 "Seize Weapon Depots"
+ GCW_seize_weapon_depots_desc:0 "Internal production is not keeping up with the demand. Let's seize from equipment from private companies to make up for the deficit."
+ GCW_ideological_mobilization:0 "Ideological Mobilization"
+ GCW_ideological_mobilization_desc:0 "This is not a war of alliances, but rather one of brothers with opposing views. It is important that our people are dedicated to the cause, at least more than their opponents anyway."
+ GCW_planned_offensive:0 "Planned Offensive"
+ GCW_planned_offensive_desc:0 "Now is the time to strike, let us drive the enemy from our homes!"
+ GCW_all_or_nothing:0 "All or Nothing!"
+ GCW_all_or_nothing_desc:0 "This war continues to drag on, the longer we sit and wait, the further victory draws from us. If we are going to win this war, it is best to do it in the present! CHARGE!"
+
  #Asia
 
  USA_we_are_better_than_this:0 ""We Are Better Than This""
@@ -2313,4 +2326,3 @@
  USA_towards_korean_autonomy:0 ""Our Greatest Hypocrisy""
  
  USA_korean_autonomy: "§OHas Kennedy gone one step too far?"
-
