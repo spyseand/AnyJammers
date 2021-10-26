@@ -62,7 +62,7 @@ ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
-	color = rgb { 215 196 72 }
+	color = rgb { 100 130 30 }
 	color_ui = rgb { 255 255 120 }
 }
 YUG = {
@@ -102,7 +102,7 @@ POR = {
 	color_ui = rgb { 51 151 91 }
 }
 FIN = {
-	color = rgb { 205 212 228 }
+	color = rgb { 130 50 100 }
 	color_ui = rgb { 255 255 255 }
 }
 IRE = {
@@ -126,7 +126,7 @@ AST = {
 	color_ui = rgb { 74 186 126 }
 }
 BHU = {
-	color = rgb { 172 122 88 }
+	color = rgb { 200 120 40 }
 	color_ui = rgb { 172 122 88 }
 }
 BOL = {
@@ -166,7 +166,7 @@ ELS = {
 	color_ui = rgb { 198 169 248 }
 }
 ETH = {
-	color = rgb { 152 130 191 }
+	color = rgb { 173 31 31 }
 	color_ui = rgb { 198 169 248 }
 }
 GUA = {
@@ -226,7 +226,7 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 171 190 152 }
+	color = rgb { 100 130 30 }
 	color_ui = rgb { 222 247 198 }
 }
 SIA = {
@@ -246,7 +246,7 @@ URG = {
 	color_ui = rgb { 222 247 198 }
 }
 VEN = {
-	color = rgb { 171 190 152 }
+	color = rgb { 100 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
@@ -290,11 +290,11 @@ HAI = {
 	color_ui = rgb { 174 113 113 }
 }
 YEM = {
-	color = rgb { 155 101 107 }
+	color = rgb { 100 130 30 }
 	color_ui = rgb { 202 131 139 }
 }
 OMA = {
-	color = rgb { 155 101 107 }
+	color = rgb { 100 130 30 }
 	color_ui = rgb { 202 131 139 }
 }
 SLO = {

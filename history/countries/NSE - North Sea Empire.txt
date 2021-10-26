@@ -4,28 +4,30 @@ set_research_slots = 3
 set_stability = 0.5
 set_war_support = 0.5
 
-set_autonomy = {
-	target = RAJ
-	autonomy_state = satellite
-}
-set_autonomy = {
- 	target = SWE
- 	autonomy_state = reichsprotectorate
-}
-set_autonomy = {
- 	target = CEU
- 	autonomy_state = satellite
-}
-set_autonomy = {
-	target = FIN
-	autonomy_state = reichskomissariat
-}
+#set_autonomy = {
+#	target = RAJ
+#	autonomy_state = satellite
+#}
+#set_autonomy = {
+# 	target = SWE
+# 	autonomy_state = reichsprotectorate
+#}
+#set_autonomy = {
+# 	target = CEU
+# 	autonomy_state = satellite
+#}
+#set_autonomy = {
+#	target = FIN
+#	autonomy_state = reichskomissariat
+#}
 
 create_faction = Nordlys
+puppet = ETH
 add_to_faction = NSE
 add_to_faction = CEU
 add_to_faction = SWE
 add_to_faction = FIN
+add_to_faction = VEN
 
 # Starting tech
 set_technology = {

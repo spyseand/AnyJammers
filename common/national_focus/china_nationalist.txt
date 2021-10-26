@@ -50,7 +50,7 @@
 	}
 	
 	focus = {
-		id = CHI_unite_the_peninsula
+		id = CHI_proclaim_the_empire
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = CHI_sieze_the_final_vestige }
 		relative_position_id = CHI_sieze_the_final_vestige
@@ -80,7 +80,7 @@
 		}
 
 		completion_reward = {
-			NKR = { create_wargoal = { type = take_state_focus target = KOR } }
+
 		}
 	}
 

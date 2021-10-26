@@ -2300,3 +2300,17 @@
  GER_testing_the_waters_desc:0 "It is time for Josef Abs plan to move forwards. Let us begin a trial period to see how it'll go."
  GER_formally_disband_the_NSDAP:0 "Disband the NSDAP"
  GER_formally_disband_the_NSDAP_desc:0 "The time has come. Every piece is in place on the board, and all that's left to do is for Josef Abs to sign the bill. If his gambit does not pay off, Germany will be plunged into a dark age like never before."
+
+ #Asia
+
+ USA_we_are_better_than_this:0 ""We Are Better Than This""
+ USA_return_japanese_islands:0 "Return Japanese Islands"
+ USA_end_the_occupation:0 "End the Occupation"
+ USA_freedom_for_the_philippines:0 "Freedom for the Philippines"
+ USA_crush_the_united_fruit_company:0 "Crush the United Fruit Company"
+ USA_return_belize:0 "Return Belize"
+ USA_return_the_panama_canal:0 "Return the Panama Canal"
+ USA_towards_korean_autonomy:0 ""Our Greatest Hypocrisy""
+ 
+ USA_korean_autonomy: "§OHas Kennedy gone one step too far?"
+

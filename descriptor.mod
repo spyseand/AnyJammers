@@ -6,4 +6,5 @@ tags={
 	"Gameplay"
 }
 name="The Perfect Dystopia"
+replace_path="events"
 supported_version="1.10.8"

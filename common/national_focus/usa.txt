@@ -25,15 +25,51 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
+	
 	focus = {
-		id = USA_return_japanese_islands
+		id = USA_we_are_better_than_this
 		icon = GFX_unknown
 
 		x = 3
 		y = 2
-		relative_position_id = 
 
-		cost = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			country_event = {
+				id = usa.1
+				days = 0
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_return_japanese_islands
+		icon = GFX_unknown
+
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_we_are_better_than_this }
+		relative_position_id = USA_we_are_better_than_this
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -59,9 +95,254 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	
+	focus = {
+		id = USA_return_japanese_islands
+		icon = GFX_unknown
+
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_we_are_better_than_this }
+		relative_position_id = USA_we_are_better_than_this
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			JAP {
+				transfer_state = 536
+				transfer_state = 645
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_end_the_occupation
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_return_japanese_islands }
+		relative_position_id = USA_return_japanese_islands
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			JAP {
+				add_autonomy_ratio = {
+					value = 0.2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = USA_freedom_for_the_philippines
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_end_the_occupation }
+		relative_position_id = USA_end_the_occupation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			end_puppet = PHI
+		}
+	}
+	
+	focus = {
+		id = USA_crush_the_united_fruit_company
+		icon = GFX_unknown
+
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_we_are_better_than_this }
+		relative_position_id = USA_we_are_better_than_this
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			end_puppet = GUA
+		}
+	}
+	
+	focus = {
+		id = USA_return_belize
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_crush_the_united_fruit_company }
+		relative_position_id = USA_crush_the_united_fruit_company
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			GUA {
+				transfer_state = 311
+
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_return_the_panama_canal
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_return_belize }
+		relative_position_id = USA_return_belize
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			GUA {
+				transfer_state = 685
+
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_towards_korean_autonomy
+		icon = GFX_unknown
+
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_return_the_panama_canal }
+		prerequisite = { focus = USA_freedom_for_the_philippines }
+		relative_position_id = USA_return_the_panama_canal
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+				custom_effect_tooltip = USA_korean_autonomy
+				hidden_effect = {
+					
+				}
+		}
+	}
 
 	
 }

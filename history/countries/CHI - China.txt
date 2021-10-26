@@ -1,18 +1,21 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "CHI_1936_naval_mtg"
-	else = {
-		set_naval_oob = "CHI_1936_naval_legacy"
-	}
-}
+
+
+create_faction = the_chinese_concordat
+add_to_faction = NKR
+add_to_faction = BRM
+add_to_faction = VIN
+add_to_faction = BHU
+add_to_faction = MON
+
 
 puppet = MON
 puppet = VIN
 puppet = NKR
 puppet = BRM
+puppet = BHU
 
 set_stability = 0.2
 set_war_support = 0.5
