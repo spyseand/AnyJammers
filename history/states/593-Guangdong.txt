@@ -12,6 +12,9 @@ state= {
 	history= {
 		owner = CHI
 		add_core_of = CHI
+		victory_points = {
+			10062 3 
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,9 +23,14 @@ state= {
 				coastal_bunker = 1
 				bunker = 1
 			}
+			air_base = 1
+			10062 = {
+				naval_base = 6
+				coastal_bunker = 1
+			}
 		}
 	}
 	provinces={
-		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 
+		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 10062
 	}
 }

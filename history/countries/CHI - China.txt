@@ -10,6 +10,9 @@ if = {
 }
 
 puppet = MON
+puppet = VIN
+puppet = NKR
+puppet = BRM
 
 set_stability = 0.2
 set_war_support = 0.5

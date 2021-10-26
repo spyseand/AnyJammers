@@ -7,21 +7,16 @@ state={
 	state_category = enclave
 
 	history={
-		owner = FRA
-		add_core_of = DJI
-		victory_points = {
-			8124 1
-		}
+		owner = SIA
+
 		buildings = {
 			infrastructure = 3
 			air_base = 2
-			8124 = {
-				naval_base = 2
-			}
+
 		}
 
 	}
 	provinces={
-		4985 8124
+		12144 1291 7342 12215 4310 1364 7329 10227 12199 1348 1392 7399 4355
  	}
 }

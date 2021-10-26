@@ -231,3 +231,5 @@ GRP = "countries/Peoples Germany.txt"
 BEN = "countries/Benelux Revolt.txt"
 PAD = "countries/Padania.txt"
 CZS = "countries/Czechslovak Revolt.txt"
+
+NKR = "countries/North Korea.txt"

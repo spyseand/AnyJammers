@@ -1,0 +1,88 @@
+﻿focus_tree = {
+	id = china_nationalist_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }
+
+
+	focus = {
+		id = CHI_sieze_the_final_vestige
+		icon = GFX_goal_generic_national_unity
+		x = 5
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			transfer_state = 729
+		}
+	}
+	
+	focus = {
+		id = CHI_unite_the_peninsula
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_sieze_the_final_vestige }
+		relative_position_id = CHI_sieze_the_final_vestige
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			NKR = { create_wargoal = { type = take_state_focus target = KOR } }
+		}
+	}
+
+
+}

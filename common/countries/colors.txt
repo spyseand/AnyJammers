@@ -261,6 +261,10 @@ MON = {
 	color = rgb { 200 120 40 }
 	color_ui = rgb { 184 184 46 }
 }
+NKR = {
+	color = rgb { 200 120 40 }
+	color_ui = rgb { 184 184 46 }
+}
 MEN = {
 	color = rgb { 185  255  152 }
 	color_ui = rgb { 165  230  132 }
@@ -298,7 +302,7 @@ SLO = {
 	color_ui = rgb { 64 64 64 }
 }
 RAJ = {
-	color = rgb { 226  135  40 }
+	color = rgb { 100  140  100 }
 	color_ui = rgb { 226  135  40 }
 }
 
@@ -446,12 +450,20 @@ ZIM = {
 	color = rgb { 7 7 239 }
 	color_ui = rgb { 7 7 239 }
 }
+BRM = {
+	color = rgb { 200 120 40 }
+	color_ui = rgb { 7 7 239 }
+}
 BOT = {
 	color = rgb { 11 132 112 }
 	color_ui = rgb { 11 132 112 }
 }
 PAK = {
 	color = rgb { 21 38 66 }
+	color_ui = rgb { 21 38 66 }
+}
+KAZ = {
+	color = rgb { 140 80 80 }
 	color_ui = rgb { 21 38 66 }
 }
 WGR = {

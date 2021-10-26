@@ -18,6 +18,9 @@ add_to_faction = HOL
 add_to_faction = PHI
 add_to_faction = AUS
 add_to_faction = NZL
+puppet = KOR
+puppet = JAP
+puppet = PHI
 
 set_research_slots = 4
 set_stability = 0.75
