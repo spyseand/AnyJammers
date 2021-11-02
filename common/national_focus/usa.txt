@@ -343,6 +343,269 @@ focus_tree = {
 				}
 		}
 	}
+	
+	focus = {
+		id = USA_westmoreland
+		icon = GFX_unknown
 
+		x = -5
+		y = 1
+		prerequisite = { focus = USA_towards_korean_autonomy }
+		relative_position_id = USA_towards_korean_autonomy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_assume_control
+		icon = GFX_unknown
+
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_westmoreland }
+		relative_position_id = USA_westmoreland
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_retain_the_east
+		icon = GFX_unknown
+
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_westmoreland }
+		relative_position_id = USA_westmoreland
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_socialism
+		icon = GFX_unknown
+
+		x = 5
+		y = 1
+		prerequisite = { focus = USA_towards_korean_autonomy }
+		relative_position_id = USA_towards_korean_autonomy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_arrest_reactionary_military_elements
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_socialism }
+		relative_position_id = USA_socialism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_end_of_the_storm
+		icon = GFX_unknown
+
+		x = 0
+		y = 1
+		prerequisite = { focus = USA_arrest_reactionary_military_elements }
+		relative_position_id = USA_arrest_reactionary_military_elements
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = USA_the_question_of_korea
+		icon = GFX_unknown
+
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_end_of_the_storm }
+		relative_position_id = USA_end_of_the_storm
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = USA_the_certainty_of_the_east
+		icon = GFX_unknown
+
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_end_of_the_storm }
+		relative_position_id = USA_end_of_the_storm
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+
+		}
+	}
 	
 }
