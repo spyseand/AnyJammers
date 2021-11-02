@@ -6,23 +6,23 @@ set_fuel_ratio = 0.8
 
 set_autonomy = {
 	target = SLO
-	autonomy_state = reichsprotectorate
+	autonomy_state = autonomy_reichskommissariat
 }
 set_autonomy = {
 	target = CZE
-	autonomy_state = reichsprotectorate
+	autonomy_state = autonomy_reichskommissariat
 }
 set_autonomy = {
 	target = BEL
-	autonomy_state = reichsprotectorate
+	autonomy_state = autonomy_reichskommissariat
 }
 set_autonomy = {
 	target = LIT
-	autonomy_state = satellite
+	autonomy_state = autonomy_reichskommissariat
 }
 set_autonomy = {
 	target = GAF
-	autonomy_state = satellite
+	autonomy_state = autonomy_reichskommissariat
 }
 
 add_ideas = {

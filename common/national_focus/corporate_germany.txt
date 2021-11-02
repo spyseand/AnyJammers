@@ -470,7 +470,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = 0
 		y = 1
-		cost = 0
+		cost = 2
 		prerequisite = { focus = GRC_a_depression_staved_off }
 		relative_position_id = GRC_a_depression_staved_off
 
