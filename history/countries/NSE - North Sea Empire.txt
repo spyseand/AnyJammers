@@ -23,6 +23,8 @@ set_war_support = 0.5
 
 create_faction = Nordlys
 puppet = ETH
+puppet = FIN
+puppet = SWE
 add_to_faction = NSE
 add_to_faction = CEU
 add_to_faction = SWE

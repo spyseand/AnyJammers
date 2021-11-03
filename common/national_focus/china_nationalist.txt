@@ -80,7 +80,52 @@
 		}
 
 		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	
+	
+	focus = {
+		id = CHI_theyre_weak
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_proclaim_the_empire }
+		relative_position_id = CHI_proclaim_the_empire
+		x = 0
+		y = 1
 
+		cost = 30
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+			date = 1936.10.20
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			NKR {
+				declare_war_on = {
+					target = KOR
+					type = annex_everything
+				}
+			}
 		}
 	}
 
