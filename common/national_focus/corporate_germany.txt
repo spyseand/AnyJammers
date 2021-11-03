@@ -117,7 +117,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_bureau_of_internal_affairs
 		}
 	}
 
@@ -133,7 +133,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_the_report_and_reward_system
 		}
 	}
 
@@ -149,7 +149,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_privatized_police
 		}
 	}
 
@@ -166,7 +166,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			custom_effect_tooltip = tt_GER_modern_surveillance_state
+			hidden_effect = {
+				remove_ideas = {
+					GER_privatized_police
+					GER_the_report_and_reward_system
+					GER_bureau_of_internal_affairs
+				}
+				add_ideas = GER_modern_surveillance_state
+			}
 		}
 	}
 
@@ -201,7 +209,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_elimination_quotas
 		}
 	}
 
@@ -217,7 +225,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			swap_ideas = {
+				add_idea = GER_nominal_promotions
+				remove_idea = GER_elimination_quotas
+			}
 		}
 	}
 
@@ -233,7 +244,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_additive_addictives
 		}
 	}
 
@@ -249,7 +260,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			swap_ideas = {
+				add_idea = GER_systemic_addiction
+				remove_idea = GER_additive_addictives
+			}
 		}
 	}
 
@@ -267,7 +281,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			swap_ideas = {
+				add_idea = GER_corporatism
+				remove_idea = GER_corporate_oligarchy
+			}
 		}
 	}
 
@@ -284,8 +301,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_political_power = 100
 			set_country_flag = GER_monopoly_tree_FLG
 			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = tt_chunk
 		}
 	}
 
@@ -323,8 +342,60 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-		completion_reward = {
+		bypass = {
+			AND = {
+				NOT = {
+					country_exists = BEL
+				}
+				NOT = {
+					country_exists = CZE
+				}
+				NOT = {
+					country_exists = SLO
+				}
+				NOT = {
+					country_exists = GRI
+				}
+			}
+		}
 
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = BEL
+				}
+				annex_country = {
+					target = BEL
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					country_exists = CZE
+				}
+				annex_country = {
+					target = CZE
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SLO
+				}
+				annex_country = {
+					target = SLO
+					transfer_troops = no
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GRI
+				}
+				annex_country = {
+					target = GRI
+					transfer_troops = no
+				}
+			}
 		}
 	}
 
@@ -339,8 +410,48 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-		completion_reward = {
+		bypass = {
+			AND = {
+				NOT = {
+					country_exists = BEN
+				}
+				NOT = {
+					country_exists = CZE
+				}
+				NOT = {
+					country_exists = PAD
+				}
+			}
+		}
 
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = BEN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BEN
+				}
+			}
+			if = {
+				limit = {
+					country_exists = CZS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CZS
+				}
+			}
+			if = {
+				limit = {
+					country_exists = PAD
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PAD
+				}
+			}
 		}
 	}
 
@@ -356,8 +467,46 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-		completion_reward = {
+		available = {
+			owns_state = 6
+			owns_state = 34
+			owns_state = 29
+			owns_state = 9
+			owns_state = 75
+			owns_state = 70
+			owns_state = 71
+			owns_state = 161
+			owns_state = 158
+		}
 
+		completion_reward = {
+			6 = {
+				add_core_of = GER
+			}
+			34 = {
+				add_core_of = GER
+			}
+			29 = {
+				add_core_of = GER
+			}
+			9 = {
+				add_core_of = GER
+			}
+			75 = {
+				add_core_of = GER
+			}
+			70 = {
+				add_core_of = GER
+			}
+			71 = {
+				add_core_of = GER
+			}
+			161 = {
+				add_core_of = GER
+			}
+			158 = {
+				add_core_of = GER
+			}
 		}
 	}
 
@@ -519,7 +668,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_industrial_reorginization
 		}
 	}
 
@@ -535,7 +684,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_amerikan_trade
+			add_political_power = 75
 		}
 	}
 
@@ -551,7 +701,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -607,7 +780,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = free_trade
+			add_political_power = -50
+			add_stability = 0.05
 		}
 	}
 
@@ -623,7 +798,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_political_power = -50
+			add_stability = 0.05
 		}
 	}
 
@@ -678,7 +854,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_ideas = GER_nordic_trade
+			add_political_power = 75
 		}
 	}
 
@@ -694,7 +871,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -738,6 +938,7 @@ focus_tree = {
 				id = germany.31
 				days = 1
 			}
+			custom_effect_tooltip = tt_chunk
 		}
 	}
 
@@ -899,6 +1100,97 @@ focus_tree = {
 			country_event = {
 				id = germany.39
 				days = 1
+			}
+			custom_effect_tooltip = tt_chunk2
+		}
+	}
+
+	focus = {
+		id = GRC_fall_osten
+		icon = GFX_focus_attack_soviet
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_perfect_dystopia }
+		relative_position_id = GRC_the_perfect_dystopia
+		
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = GER_josef_abs_passed_away_FLG
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_fall_nord
+		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_perfect_dystopia }
+		relative_position_id = GRC_the_perfect_dystopia
+		
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = GER_josef_abs_passed_away_FLG
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NSE
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_fall_sud
+		icon = GFX_focus_generic_attack_kurdistan
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_the_perfect_dystopia }
+		relative_position_id = GRC_the_perfect_dystopia
+		
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_country_flag = GER_josef_abs_passed_away_FLG
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = KUR
+			}
+		}
+	}
+
+	focus = {
+		id = GRC_fall_westen
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = { focus = GRC_fall_nord }
+		prerequisite = { focus = GRC_fall_osten }
+		prerequisite = { focus = GRC_fall_sud }
+		relative_position_id = GRC_fall_nord
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
 			}
 		}
 	}

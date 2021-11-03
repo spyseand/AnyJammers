@@ -1207,6 +1207,7 @@ country_event = {
 				days = 5
 			}
 		}
+		set_country_flag = GER_josef_abs_passed_away_FLG
 	}
 }
 
