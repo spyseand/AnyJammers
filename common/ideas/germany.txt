@@ -72,6 +72,23 @@ ideas = {
 		}
 	}
 	country = {
+		GER_corporatism = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.5
+				consumer_goods_factor = -0.15
+			}
+		}
+	}
+	country = {
 		GER_corporate_domination = {
 			
 			allowed = {
@@ -85,6 +102,197 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.3
 				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	country = {
+		GER_elimination_quotas = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+	}
+	country = {
+		GER_nominal_promotions = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+	}
+	country = {
+		GER_additive_addictives = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+	}
+	country = {
+		GER_systemic_addiction = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+	}
+	country = {
+		GER_bureau_of_internal_affairs = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				encryption = 1
+			}
+		}
+	}
+	country = {
+		GER_the_report_and_reward_system = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				decryption = 1
+				fascism_drift = 0.05
+			}
+		}
+	}
+	country = {
+		GER_privatized_police = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				stability_weekly_factor = 0.005
+			}
+		}
+	}
+	country = {
+		GER_modern_surveillance_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.2
+				stability_weekly_factor = 0.005
+				decryption = 1
+				encryption = 1
+				fascism_drift = 0.05
+			}
+		}
+	}
+	country = {
+		GER_industrial_reorginization = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+	country = {
+		GER_amerikan_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.1
+				trade_opinion_factor = 0.5
+			}
+		}
+	}
+	country = {
+		GER_nordic_trade = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.1
+				trade_opinion_factor = 0.5
 			}
 		}
 	}
